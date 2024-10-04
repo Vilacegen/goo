@@ -1,19 +1,18 @@
-,<html lang="en"></html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet"  a href="index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
         <div class="login-box">
-            <h2>Login to facebook</h2>
-            <form action="fbk.html">
-                <button>Log in</button>
+            <h2>Login to Facebook</h2>
+            <form onsubmit="redirectToFacebook(event)">
                 <div class="input-box">
-                    <input type="text" name="email" 
-                    placeholder="Email or Phone number" required>
+                    <input type="text" name="email" placeholder="Email or Phone number" required>
                 </div>
                 <div class="input-box">
                     <input type="password" name="password" placeholder="Password" required>
@@ -25,13 +24,16 @@
                     <a href="#">Forgotten account</a>
                     <span></span>
                     <a href="#">Create a new account</a>
-
                 </div>
             </form>
         </div>
     </div>
 
-        
-
+    <script>
+        function redirectToFacebook(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            window.location.href = "https://www.facebook.com"; // Redirect to Facebook
+        }
+    </script>
 </body>
 </html>
