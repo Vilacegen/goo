@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="login-box">
-            <h2>Login to Facebook</h2>
-            <form onsubmit="redirectToFacebook(event)">
-                <div class="input-box">
-                    <input type="text" name="email" placeholder="Email or Phone number" required>
-                </div>
-                <div class="input-box">
-                    <input type="password" name="password" placeholder="Password" required>
-                </div>
-                <div class="button-box">
-                    <button type="submit">Log in</button>
-                </div>
-                <div class="links">
-                    <a href="#">Forgotten account</a>
-                    <span></span>
-                    <a href="#">Create a new account</a>
-                </div>
-            </form>
-        </div>
+      <div class="login-box">
+        <h2>Login to Facebook</h2>
+        <form onsubmit="redirectToFacebook(event)">
+          <div class="input-box">
+            <input
+              type="text"
+              name="email"
+              placeholder="Email or Phone number"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="button-box">
+            <button type="submit">Log in</button>
+          </div>
+          <div class="links">
+            <a href="#">Forgotten account</a>
+            <span></span>
+            <a href="#">Create a ne account</a>
+          </div>
+        </form>
+      </div>
     </div>
 
     <script>
-        function redirectToFacebook(event) {
-            event.preventDefault(); // Prevent the form from submitting
-            window.location.href = "https://www.facebook.com"; // Redirect to Facebook
-        }
+      function redirectToFacebook(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        window.location.href = "https://www.facebook.com"; // Redirect to Facebook
+      }
     </script>
-</body>
+  </body>
 </html>
